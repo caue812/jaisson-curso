@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animal de Estimação</title>
+</head>
+<body>
+
+    <h1>Cadastro de Animal de Estimação</h1>
+
+    <form>
+        <!-- Nome do animal -->
+        <label for="nome">Nome do Animal:</label>
+        <input type="text" id="nome" name="nome" minlength="3" maxlength="20" required><br><br>
+
+        <!-- Raça do pet -->
+        <label for="raca">Raça do Pet:</label>
+        <select id="raca" name="raca" required>
+            <option value="labrador">Labrador</option>
+            <option value="poodle">Poodle</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="beagle">Beagle</option>
+            <option value="goldenretriever">Golden Retriever</option>
+            <option value="boxer">Boxer</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="dachshund">Dachshund</option>
+            <option value="schnauzer">Schnauzer</option>
+        </select><br><br>
+
+        <!-- Castrado ou não -->
+        <label>Castrado:</label>
+        <input type="radio" id="castrado_sim" name="castrado" value="sim" required> Sim
+        <input type="radio" id="castrado_nao" name="castrado" value="nao" required> Não<br><br>
+
+        <!-- Data de nascimento -->
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" 
+               min="2008-01-30" max="2024-01-30" required><br><br>
+
+        <!-- Botão de submissão -->
+        <input type="submit" value="Cadastrar Animal">
+    </form>
+
+</body>
+</html>

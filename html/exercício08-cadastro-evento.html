@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Evento</title>
+</head>
+<body>
+
+    <h1>Cadastro de Evento</h1>
+
+    <form action="#" method="post">
+        <!-- Nome do Evento -->
+        <label for="nome_evento">Nome do Evento:</label>
+        <input type="text" id="nome_evento" name="nome_evento" minlength="5" maxlength="50" required><br><br>
+
+        <!-- Data do Evento -->
+        <label for="data_evento">Data do Evento:</label>
+        <input type="date" id="data_evento" name="data_evento" required min="<?= date('Y-m-d'); ?>"><br><br>
+
+        <!-- Local do Evento -->
+        <label for="local_evento">Local do Evento:</label>
+        <input type="text" id="local_evento" name="local_evento" minlength="3" maxlength="100" required><br><br>
+
+        <!-- Número de Participantes Esperados -->
+        <label for="num_participantes">Número de Participantes Esperados:</label>
+        <input type="number" id="num_participantes" name="num_participantes" min="10" max="1000" required><br><br>
+
+        <!-- Tipo de Evento -->
+        <label for="tipo_evento">Tipo de Evento:</label>
+        <select id="tipo_evento" name="tipo_evento" required>
+            <option value="online">Online</option>
+            <option value="presencial">Presencial</option>
+            <option value="hibrido">Híbrido</option>
+        </select><br><br>
+
+        <!-- Botão de envio -->
+        <button type="submit">Cadastrar Evento</button>
+    </form>
+
+</body>
+</html>

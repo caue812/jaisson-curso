@@ -1,0 +1,100 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da lista de estoque */
+.stock-list {
+    width: 50%;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.stock-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock-list th, .stock-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.stock-list th {
+    background-color: #f4f4f4;
+}
+
+.stock-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.stock-list .btn-edit,
+.stock-list .btn-undo {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.stock-list .btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.stock-list .btn-undo {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Estilização do formulário */
+.stock-form {
+    width: 45%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.stock-form h2 {
+    margin-bottom: 20px;
+}
+
+.stock-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stock-form select,
+.stock-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.stock-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.stock-form button:hover {
+    background-color: #0056b3;
+}
+

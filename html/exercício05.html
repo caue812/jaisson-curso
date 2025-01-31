@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaborador</title>
+</head>
+<body>
+
+    <h1>Cadastro de Colaborador</h1>
+
+    <form action="#" method="post">
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" minlength="5" maxlength="30" required><br><br>
+
+        <!-- Sobrenome -->
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" minlength="5" maxlength="30" required><br><br>
+
+        <!-- CPF (com validação de formato) -->
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" minlength="14" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="xxx.xxx.xxx-xx" required><br><br>
+
+        <!-- CNPJ (com validação de formato) -->
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" minlength="18" maxlength="18" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" placeholder="xx.xxx.xxx/xxxx-xx" required><br><br>
+
+        <!-- Quantidade de horas -->
+        <label for="quantidade_horas">Quantidade de Horas (mín. 40, máx. 300):</label>
+        <input type="number" id="quantidade_horas" name="quantidade_horas" min="40" max="300" required><br><br>
+
+        <!-- Valor hora -->
+        <label for="valor_hora">Valor Hora (R$ 15,00 a R$ 45,00):</label>
+        <input type="number" id="valor_hora" name="valor_hora" min="15" max="45" step="0.01" required><br><br>
+
+        <!-- Dados de entrada na empresa -->
+        <label for="dados_entrada">Dados de Entrada na Empresa:</label><br>
+        <textarea id="dados_entrada" name="dados_entrada" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Tipo de colaborador -->
+        <label for="tipo_colaborador">Tipo de Colaborador:</label>
+        <select id="tipo_colaborador" name="tipo_colaborador" required>
+            <option value="pj">PJ</option>
+            <option value="pf">PF</option>
+        </select><br><br>
+
+        <!-- Botão de submissão -->
+        <input type="submit" value="Cadastrar Colaborador">
+    </form>
+
+</body>
+</html>

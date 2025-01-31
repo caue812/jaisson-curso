@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Lista de Estoque -->
+    <div class="stock-list">
+        <h2>Itens do Estoque</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de linha de item -->
+                <tr>
+                    <td>001</td>
+                    <td>Produto A</td>
+                    <td>50</td>
+                    <td>R$ 10,00</td>
+                    <td>
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-undo">Desfazer Entrada</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Produto B</td>
+                    <td>30</td>
+                    <td>R$ 20,00</td>
+                    <td>
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-undo">Desfazer Entrada</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="stock-form">
+        <h2>Entrada de Estoque</h2>
+        <form>
+            <label for="product-code">Produto:</label>
+            <select id="product-code" name="product-code">
+                <option value="001">001 - Produto A</option>
+                <option value="002">002 - Produto B</option>
+                <option value="003">003 - Produto C</option>
+                <option value="004">004 - Produto D</option>
+                <option value="005">005 - Produto E</option>
+            </select>
+
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="unit-price">Preço Unitário:</label>
+            <input type="number" id="unit-price" name="unit-price" step="0.01" required>
+
+            <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+

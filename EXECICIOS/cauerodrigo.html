@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Pizzaria</title>
+    <link rel="stylesheet" href="cauerodrigo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabela">
+            <h2>Cardápio de Pizzas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Sabor</th>
+                        <th>Ingredientes</th>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MARGUERITA </td>
+                        <td> mussarela,molho De tomate e manjericão fresco. </td>
+                        <td>35 CM</td>
+                        <td>R$ 38,00</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CALABRESA</td>
+                        <td> muçarela,molho de tomate cebola e orégano.</td>
+                        <td>35 CM</td>
+                        <td>R$ 36,00</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>FRANGO</td>
+                        <td>frango,queijo,molho de tomate e milho.</td>
+                        <td> 35 CM</td>
+                        <td>R$ 33,00</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="formulario">
+            <h2>Fazer Pedido</h2>
+            <form action="#" method="POST">
+                <label for="fazer-pedido">Pizza</label>
+                <select id="pizza" name="pizza">
+                    <option value="001">MARGUERITA</option>
+                    <option value="002">CALABRESA</option>
+                    <option value="003">FRANGO</option>
+                </select>
+
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="codigo" name="quantidade" required>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <button type="submit">Fazer Pedido</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h2>Informações das pizzas</h2>
+        <p> - MARGUERITA: Segundo a receita original de Nápoles, uma boa pizza marguerita deve ter apenas os seguintes
+            ingredientes:
+            tomate, mussarela e manjericão – todos de excelente qualidade e colocados cuidadosamente sobre a massa, sem
+            exagero nas porções.
+        </p>
+        <p> - CALABRESA: A base da pizza calabresa é tradicionalmente coberta com molho de tomate, queijo mussarela e
+            fatias finas de linguiça calabresa, que é um tipo de linguiça defumada e apimentada. O sabor picante da
+            linguiça se mistura harmoniosamente com o doce do molho de tomate e o sabor suave do queijo, criando uma
+            experiência única para o paladar.
+        </p>
+        <p> - FRANGO: Uma deliciosa pizza de frango, feita com uma base crocante e coberta com molho de tomate suave. O
+            sabor do frango temperado se mistura perfeitamente com o queijo derretido, criando uma combinação
+            irresistível. Para um toque especial, grãos de milho crocantes são adicionados, oferecendo um contraste de
+            texturas e um sabor levemente adocicado. Uma verdadeira experiência de sabor que vai conquistar seu paladar!
+        </p>
+        <img src="https://nonoludovico.com.br/wp-content/uploads/2019/12/pizza-marguerita-nono-ludovico.png">
+    </div>
+</body>
+
+</html>
