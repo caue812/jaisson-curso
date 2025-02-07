@@ -3,67 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home html</title>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="exemplo-menu-lateral.html">
 </head>
 <body>
   <header>
     <div class="logo">
-        <img src="css/adidas-1024x683.webp">
+        <img src="css/adidas-1024x683.webp" alt="Logo">
     </div>
     <div class="header-content">
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Pesquisar...">
-            <span class="search-icon">🔍</span>
+        
+            <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
         </div>
-        <div class="user-icon" onclick="toggleMenu()">👤</div>
+        
+        <i class="fa-regular fa-user" style="color: #FFD43B;" onclick="toggleMenu()"></i>
     </div>
-</header>
+  </header>
 
-<div id="menu-lateral" class="menu-lateral">
-    <a href="exemplo-menu-lateral.html">Menu 1</a>
-    <a href="exemplo-menu-lateral.html">Menu 2</a>
-    <a href="exemplo-menu-lateral.html">Menu 3</a>
-    <a href="exemplo-menu-lateral.html">Menu 4</a>
-</div>
-<script src="https://kit.fontawesome.com/80793a8067.js" crossorigin="anonymous"></script>
-
-
-
-<div id="side-menu" class="side-menu">  
+  <div id="side-menu" class="side-menu">  
     <ul>
         <li><a href="#">Perfil</a></li>
         <li><a href="#">Configurações</a></li>
         <li><a href="#">Sair</a></li>
     </ul>
-</div>
+  </div>
 
-<nav class="navbar">
+  <nav class="navbar">
     <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Contato</a></li>
     </ul>
-</nav>
+  </nav>
 
-  <section class="image-gallery">
+  <main class="image-gallery">
     <div class="image-column">
         <img src="css/foto.webp" alt="Imagem 1">
-        <img src="css/foto4.webp" alt="Imagem 2">
+        <img src="css/foto2.webp" alt="Imagem 2">
         <img src="css/foto3.avif" alt="Imagem 3">
     </div>
-</section>
 
-<footer>
+    <div class="image-column">
+        <img src="css/foto4.webp" alt="Imagem 4">
+        <img src="css/foto5.webp" alt="Imagem 5">
+        <img src="css/foto6.webp" alt="Imagem 6">
+    </div>
+
+    <div class="image-column">
+        <img src="css/foto7.webp" alt="Imagem 7">
+        <img src="css/foto8.webp" alt="Imagem 8">
+        <img src="css/foto9.webp" alt="Imagem 9">
+    </div>
+  </main>
+
+  <footer>
     <div class="footer-icons">
         <a href="#">🏠</a>
-            <a href="#">📞</a>
-            <a href="#">✉️</a>
+        <a href="#">📞</a>
+        <a href="#">✉️</a>
     </div>
-</footer>
+  </footer>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
-

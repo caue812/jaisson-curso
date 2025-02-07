@@ -10,11 +10,9 @@
     <h1>Cadastro de Produto</h1>
 
     <form action="#" method="post">
-        <!-- Nome do Produto -->
         <label for="nome_produto">Nome do Produto:</label>
         <input type="text" id="nome_produto" name="nome_produto" minlength="3" maxlength="50" required><br><br>
 
-        <!-- Categoria -->
         <label for="categoria">Categoria:</label>
         <select id="categoria" name="categoria" required>
             <option value="eletronicos">Eletrônicos</option>
@@ -24,20 +22,18 @@
             <option value="brinquedos">Brinquedos</option>
         </select><br><br>
 
-        <!-- Preço -->
         <label for="preco">Preço (R$):</label>
         <input type="number" id="preco" name="preco" min="5" max="5000" step="0.01" required><br><br>
 
-        <!-- Quantidade em estoque -->
         <label for="quantidade">Quantidade em Estoque:</label>
         <input type="number" id="quantidade" name="quantidade" min="1" max="1000" required><br><br>
 
-        <!-- Data de validade -->
+       
         <label for="validade">Data de Validade:</label>
         <input type="date" id="validade" name="validade" required 
             min="?= date('Y-m-d'); ?"><br><br>
 
-        <!-- Botão de envio -->
+     
         <button type="submit">Cadastrar Produto</button>
     </form>
 
