@@ -1,4 +1,3 @@
-
 body, html {
     margin: 0;
     padding: 0;
@@ -139,16 +138,17 @@ footer {
     gap: 20px;
 }
 
-.footer-icons a {
-    color: #fff;
+.footer-icons a img {
     font-size: 30px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    height: auto;
+    width: 30px;
+    cursor: pointer;
 }
 
-.footer-icons a:hover {
-    color: #4CAF50;
+.footer-icons a:hover img {
+    opacity: 0.8;
 }
+
 
 @media (max-width: 768px) {
     .search-bar {
