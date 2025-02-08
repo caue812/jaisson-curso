@@ -16,7 +16,7 @@
     background-color: #9b59b6;
 }
 .scale-hover:hover{
-    transform: scale(4.2);
+    transform: scale(4.2); 
     z-index: 99999999;
 }
 .scale-active{
