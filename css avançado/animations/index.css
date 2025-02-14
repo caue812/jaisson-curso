@@ -1,4 +1,4 @@
-body{ 
+body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 2rem;
     display: grid;
@@ -8,7 +8,7 @@ body{
     background-color: #f0f0f0;
 }
 
-.animation-box{
+.animation-box {
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -16,7 +16,7 @@ body{
     margin-bottom: 10px;
 }
 
-.pulse{
+.pulse {
     width: 100px;
     height: 100px;
     background-color: #ff4757;
@@ -30,11 +30,11 @@ body{
     cursor: pointer;
 }
 
-.pulse span{
+.pulse span {
     user-select: none;
 }
 
-@keyframes pulso{
+@keyframes pulso {
     0% {
         transform: scale(0.95);
         color: green;
@@ -54,16 +54,10 @@ body{
         color: red;
     }
 
-    100%{
+    100% {
         transform: scale(0.95);
         color: green;
     }
-}
-
-.pulse span{
-    user-select: none;
-}
-@keyframes pulso{
 }
 
 .cube {
@@ -76,12 +70,17 @@ body{
     animation: rotate 4s linear infinite;
 }
 
-@keyframes rotate{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.inner-cube{
+.inner-cube {
     width: 50px;
     height: 50px;
     background-color: aqua;
@@ -89,16 +88,90 @@ body{
 }
 
 
-@keyframes rotate-inverse{
-    0%( transform: rotate(360deg);)
-    100%(transform: rotate(90deg);)
+@keyframes rotate-inverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
 }
 
-.hover-card{
+.hover-card {
     width: 200px;
-    height: 200px; background-color: 1e90ff; transition: all 0.3s ease;
+    height: 200px;
+    background-color: #1e90ff;
+    transition: all 0.3s ease;
 }
-.hover-card:hover{
+
+.hover-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-slide{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: escrevendo 3s steps(40) infinite;
+}
+@keyframes escrevendo {
+    0% { width: 0;}
+    50% { width: 300px;}
+    100% { width: 0px;}
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f1f2f6;
+    border-top: 5px solid #2ed573;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Shorthand */
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+}
+
+.color-change {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    animation: alterarCor 4s infinite alternate;
+}
+
+@keyframes alterarCor {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+.bounce-container{
+    height: 200px;
+    border-bottom: 2px solid #ddd;
+}
+
+.bounce-ball{
+    width: 50px;
+    height: 50px;
+    background: #ffa502;
+    border-radius: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode */
+    animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translate(0, 0);} /* Ponto inicial */
+    25% { transform: translate(0, 150px);}  /*  ↓  */
+    50% { transform: translate(150px, 150px);}  /* →  */
+    75% { transform: translate(150px, 0);}  /*  ↑  */
+    100% { transform: translateY(0, 0);}   /*  Ponto inicial ←   */
 }
